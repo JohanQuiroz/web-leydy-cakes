@@ -15,16 +15,6 @@ div {
     /* border: solid green 2px; */
 }
 
-.container {
-    height: 100%;
-    margin: auto;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 /* HEADER */
 
 #header {
@@ -65,6 +55,7 @@ div {
     display: flex;
     align-items: center;
     margin-right: 20px;
+    color: rgb(56, 55, 55);
 }
 
 .header-top-info-block img {
@@ -123,6 +114,7 @@ div {
 .header-middle-logo {
     display: flex;
     justify-content: center;
+    margin: auto;
 }
 
 .header-middle-logo img {
@@ -170,4 +162,71 @@ div {
     font-family: 'Livvic', sans-serif;
     color: white;
     font-size: 30px;
+}
+
+/* MAIN CONTENT */
+
+#main-content {
+    height: 700px;
+    background-color: #FDF5E6;
+}
+
+.tittle {
+    font-size: 55px;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 40px;
+    color: #a54b4a;
+}
+
+.subtittle {
+    margin: 0;
+    color:rgb(170, 28, 151);
+    text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.7);
+    display: inline;
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.taste {
+    color: #fff;
+    margin: 7px 0;
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.7);
+    font-family: 'Dancing Script', cursive;
+    margin-top: 0;
+}
+
+.division-line {
+    width: 80%;
+    height: 2px;
+    background-color: #36221c;
+}
+
+/* style MATERIALIZE */
+
+.carousel {
+    min-height: 500px;
+}
+
+.carousel .carousel-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    width: 500px;
+    height: 500px;
+}
+
+.carousel .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 15px;
 }
