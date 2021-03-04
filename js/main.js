@@ -16,7 +16,15 @@ function initCarousel() {
         dist: -60,
         shift: 5,
         padding: 100,
-        numVisible: 5,
-        indicators: true
+        numVisible: 3,
+        indicators: true,
     });
+    setInterval( () => {
+        M.Carousel.getInstance(carouselElements[0]).next();
+    }, 3000);
+
 }
+
+
+
+
